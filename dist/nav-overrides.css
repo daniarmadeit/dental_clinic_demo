@@ -1,0 +1,13 @@
+/* Header navigation refinements */
+@media (min-width: 1051px) {
+  .header { gap: 20px; }
+  .header nav {
+    gap: 30px;
+    margin-left: 8px;
+    margin-right: auto;
+  }
+  .header nav a {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
