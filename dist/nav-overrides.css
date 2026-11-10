@@ -147,6 +147,10 @@ dialog .close {
 }
 .hero-pagination button.active { background: #172025; }
 
+.quick > a.secondary {
+  color: #172025;
+}
+
 @media (max-width: 680px) {
   .hero-pagination {
     justify-content: center;
