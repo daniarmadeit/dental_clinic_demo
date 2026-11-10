@@ -132,6 +132,30 @@ dialog .close {
   text-align: left;
 }
 
+.hero-pagination {
+  display: flex;
+  gap: 6px;
+  margin-top: 34px;
+}
+.hero-pagination button {
+  width: 52px;
+  height: 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 99px;
+  background: #d8dddd;
+}
+.hero-pagination button.active { background: #172025; }
+
+@media (max-width: 680px) {
+  .hero-pagination {
+    justify-content: center;
+    gap: 4px;
+    margin-top: 30px;
+  }
+  .hero-pagination button { width: 42px; height: 3px; }
+}
+
 @media (max-width: 680px) {
   dialog {
     width: calc(100% - 24px);
