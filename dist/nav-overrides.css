@@ -151,6 +151,24 @@ dialog .close {
   color: #172025;
 }
 
+.quick > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  min-height: 54px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.quick > a:not(.secondary) {
+  border: 1px solid rgba(255,255,255,.55);
+  background: transparent;
+  color: #fff;
+}
+
 .doctor-photo {
   display: block;
   width: 100%;
@@ -185,6 +203,11 @@ dialog .close {
     margin-right: 0;
   }
   .quick > a { text-align: center; }
+  .quick > a {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 220px;
+  }
 }
 
 @media (max-width: 680px) {
