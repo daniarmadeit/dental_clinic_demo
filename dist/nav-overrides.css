@@ -179,6 +179,10 @@ dialog .close {
   background: #f1efed;
 }
 
+.team-section { background: #f5f7f6; }
+.why-section { background: #fff; }
+.why-section .advantages > div { background: #f5f7f6; }
+
 @media (max-width: 1050px) {
   .doctor-photo { height: 260px; }
 }
