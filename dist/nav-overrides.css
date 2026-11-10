@@ -99,6 +99,16 @@ dialog select {
   background-position: right 18px center;
 }
 
+dialog .close {
+  top: 30px;
+  right: 38px;
+  padding: 0;
+  color: #172025;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .service h3 { margin-top: 0; }
 .service-more {
   margin-top: auto;
@@ -121,4 +131,9 @@ dialog select {
   dialog h2 { font-size: 32px; }
   dialog input,
   dialog select { width: 100%; }
+  dialog .close {
+    top: 27px;
+    right: 22px;
+    color: #000;
+  }
 }
