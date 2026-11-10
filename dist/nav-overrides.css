@@ -154,6 +154,15 @@ dialog .close {
     margin-top: 30px;
   }
   .hero-pagination button { width: 42px; height: 3px; }
+  .quick {
+    justify-content: center;
+    column-gap: 14px;
+  }
+  .quick > div {
+    width: 100%;
+    margin-right: 0;
+  }
+  .quick > a { text-align: center; }
 }
 
 @media (max-width: 680px) {
