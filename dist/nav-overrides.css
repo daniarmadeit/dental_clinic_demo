@@ -179,9 +179,28 @@ dialog .close {
   background: #f1efed;
 }
 
-.team-section { background: #f5f7f6; }
-.why-section { background: #fff; }
+.team-section {
+  width: 100%;
+  background: #f5f7f6;
+}
+.why-section {
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+}
 .why-section .advantages > div { background: #f5f7f6; }
+
+@media (min-width: 1051px) {
+  .why-section {
+    grid-template-columns: minmax(0, 42fr) minmax(0, 58fr);
+    gap: clamp(32px, 7vw, 112px);
+  }
+  .why-section > *,
+  .why-section .advantages,
+  .why-section .advantages > div {
+    min-width: 0;
+  }
+}
 
 @media (max-width: 1050px) {
   .doctor-photo { height: 260px; }
