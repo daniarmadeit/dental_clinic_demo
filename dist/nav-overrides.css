@@ -65,7 +65,7 @@
     height: 275px;
     border-radius: 28px 28px 0 0;
   }
-  .hero-image img { object-position: 64% center; }
+  .hero-image img { object-position: var(--mobile-focus, 92%) center; }
   .hero-copy {
     order: 2;
     position: relative;

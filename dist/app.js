@@ -5,9 +5,9 @@ function done(e){e.preventDefault();modal.close();toast.classList.add('show');se
 document.querySelector('#lead').addEventListener('submit',done);document.querySelector('#modal-form').addEventListener('submit',done);
 
 const heroSlides=[
-  {title:'Ваша улыбка —<br><em>наша забота</em>',text:'Лечение без стресса, современное оборудование и внимательные врачи для всей семьи.',image:'assets/hero-dental.png',alt:'Пациентка и врач в современной стоматологии'},
-  {title:'Ровная улыбка<br><em>в любом возрасте</em>',text:'Современная ортодонтия с понятным планом лечения и внимательным сопровождением.',image:'assets/hero-orthodontics.png',alt:'Пациент и стоматолог после консультации'},
-  {title:'Здоровые зубы —<br><em>семейная привычка</em>',text:'Бережный подход к взрослым и маленьким пациентам в спокойной атмосфере.',image:'assets/hero-family.png',alt:'Мама с дочерью на приёме у стоматолога'}
+  {title:'Ваша улыбка —<br><em>наша забота</em>',text:'Лечение без стресса, современное оборудование и внимательные врачи для всей семьи.',image:'assets/hero-dental.png',alt:'Пациентка и врач в современной стоматологии',mobileFocus:'92%'},
+  {title:'Ровная улыбка<br><em>в любом возрасте</em>',text:'Современная ортодонтия с понятным планом лечения и внимательным сопровождением.',image:'assets/hero-orthodontics.png',alt:'Пациент и стоматолог после консультации',mobileFocus:'100%'},
+  {title:'Здоровые зубы —<br><em>семейная привычка</em>',text:'Бережный подход к взрослым и маленьким пациентам в спокойной атмосфере.',image:'assets/hero-family.png',alt:'Мама с дочерью на приёме у стоматолога',mobileFocus:'95%'}
 ];
 const heroTitle=document.querySelector('#hero-title');
 const heroText=document.querySelector('#hero-text');
@@ -21,6 +21,7 @@ function showHeroSlide(index){
   heroText.textContent=slide.text;
   heroPhoto.src=slide.image;
   heroPhoto.alt=slide.alt;
+  heroPhoto.style.setProperty('--mobile-focus',slide.mobileFocus);
   heroDots.forEach((dot,i)=>dot.classList.toggle('active',i===index));
 }
 let heroTimer=setInterval(()=>showHeroSlide((heroIndex+1)%heroSlides.length),5000);
