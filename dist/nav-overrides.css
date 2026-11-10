@@ -99,6 +99,17 @@ dialog select {
   background-position: right 18px center;
 }
 
+.service h3 { margin-top: 0; }
+.service-more {
+  margin-top: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+  text-align: left;
+}
+
 @media (max-width: 680px) {
   dialog {
     width: calc(100% - 24px);
