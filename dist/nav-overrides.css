@@ -151,6 +151,24 @@ dialog .close {
   color: #172025;
 }
 
+.doctor-photo {
+  display: block;
+  width: 100%;
+  height: 330px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center 18%;
+  background: #f1efed;
+}
+
+@media (max-width: 1050px) {
+  .doctor-photo { height: 260px; }
+}
+
+@media (max-width: 680px) {
+  .doctor-photo { height: 330px; }
+}
+
 @media (max-width: 680px) {
   .hero-pagination {
     justify-content: center;
