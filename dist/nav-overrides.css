@@ -11,3 +11,11 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 1050px) {
+  .header .menu {
+    margin-left: auto;
+    padding: 8px 0 8px 12px;
+    color: #000;
+  }
+}
